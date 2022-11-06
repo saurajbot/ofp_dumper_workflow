@@ -1,0 +1,41 @@
+name: Minimal OFP Dumper Workflow
+
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+    branches: [ main ]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Checkouts
+         uses: actions/checkout@v2
+
+       - name: Clone Ofp Dumper
+         run: |
+              git clone --depth=1 --single-branch https://github.com/noobyysauraj/ofp-dumper ofp-dumper
+                        
+       - name: Setup OFP Dumper environment
+         working-directory: ofp-dumper
+         run: |
+              sudo bash setup.sh
+
+       - name: Setup config envs And Begin Dump
+         working-directory: ofp-dumper       
+         run: |
+              export BOT_CHAT_ID="@saurajdumps"
+              export GIT_ORG="sauraj-dumps"
+              export GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}
+              export BOT_TOKEN=${{ secrets.BOT_TOKEN }}
+              bash ofp.sh "$ROM_URL" 
+
+##########
+env:
+  ROM_URL: https://fileload.coloros.com/504184RMX2001export_11_C.15_2021102805510000.zip MTK
