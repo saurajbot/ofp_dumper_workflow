@@ -17,7 +17,10 @@ jobs:
     steps:
        - name: Checkouts
          uses: actions/checkout@v2
-
+         
+       - name: Clean Up
+         uses: rokibhasansagar/slimhub_actions@main
+        
        - name: Clone Ofp Dumper
          run: |
               git clone https://github.com/noobyysauraj/ofp-dumper ofp-dumper
