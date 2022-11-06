@@ -42,5 +42,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://fileload.coloros.com/504184RMX2001export_11_C.15_2021102805510000.zip
+  ROM_URL: http://rms01.realme.net/SW/realme%20service/realme%206/19662/RMX2001GDPR_11_C.17_2022010702080000.zip
   ROM_TYPE: MTK
