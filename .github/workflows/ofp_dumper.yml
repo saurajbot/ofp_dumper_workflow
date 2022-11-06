@@ -28,14 +28,16 @@ jobs:
               sudo bash setup.sh
 
        - name: Setup config envs And Begin Dump
-         working-directory: ofp-dumper       
+         working-directory: ofp-dumper
+         shell: bash
          run: |
               export BOT_CHAT_ID="@saurajdumps"
               export GIT_ORG="sauraj-dumps"
               export GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}
               export BOT_TOKEN=${{ secrets.BOT_TOKEN }}
-              bash ofp.sh "$ROM_URL" 
+              bash ofp.sh "$ROM_URL" "$ROM_TYPE"
 
 ##########
 env:
-  ROM_URL: https://fileload.coloros.com/504184RMX2001export_11_C.15_2021102805510000.zip MTK
+  ROM_URL: https://fileload.coloros.com/504184RMX2001export_11_C.15_2021102805510000.zip
+  ROM_TYPE: MTK
