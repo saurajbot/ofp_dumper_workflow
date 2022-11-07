@@ -43,4 +43,4 @@ jobs:
 ##########
 env:
   ROM_URL: http://rms01.realme.net/SW/realme%20service/realme%209%205G/21747/RMX3388export_11_A.02_2022021600200346.zip
-  ROM_TYPE: http://rms01.realme.net/SW/realme%20service/realme%209%205G/21747/RMX3388export_11_A.02_2022021600200346.zip
+  ROM_TYPE: MTK
