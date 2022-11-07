@@ -43,4 +43,4 @@ jobs:
 ##########
 env:
   ROM_URL: https://rms01.realme.net/sw/RMX3242GDPR_11_C.05_2022101112490120.zip
-  ROM_TYPE: QC
+  ROM_TYPE: MTK
