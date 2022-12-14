@@ -42,5 +42,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/SW/realme%20service/realme%205%20Pro/19691/RMX1971_11_F.06_2022050514460512.7z
-  ROM_TYPE: MTK
+  ROM_URL: https://rms01.realme.net/sw/RMX3301export_11_A.19_2022082205500000.zip
+  ROM_TYPE: QC
