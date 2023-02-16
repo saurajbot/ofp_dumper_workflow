@@ -42,5 +42,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/sw/RMX2189export_11_C.13_2022070513330163.zip
-  ROM_TYPE: https://rms01.realme.net/sw/RMX2189export_11_C.13_2022070513330163.zip
+  ROM_URL: https://rms01.realme.net/sw/RMX3195export_11_C.08_2022080313000000.zip
+  ROM_TYPE: https://rms01.realme.net/sw/RMX3195export_11_C.08_2022080313000000.zip
