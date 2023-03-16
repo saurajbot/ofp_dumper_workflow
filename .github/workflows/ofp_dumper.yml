@@ -42,5 +42,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/sw/RMX3195export_11_C.08_2022080313000000.zip
-  ROM_TYPE: https://rms01.realme.net/sw/RMX3195export_11_C.08_2022080313000000.zip
+  ROM_URL: https://fileload.coloros.com/489596RMX2081PU_11_A.53_210404_719ee533.zip
+  ROM_TYPE: https://fileload.coloros.com/489596RMX2081PU_11_A.53_210404_719ee533.zip
