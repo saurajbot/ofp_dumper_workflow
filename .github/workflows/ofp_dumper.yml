@@ -43,4 +43,4 @@ jobs:
 ##########
 env:
   ROM_URL: https://rms01.realme.net/SW/realme%20service/relame%20GT2/216B2/RMX3312export_11_A.17_2022060101020558.7z
-  ROM_TYPE: https://rms01.realme.net/SW/realme%20service/relame%20GT2/216B2/RMX3312export_11_A.17_2022060101020558.7z
+  ROM_TYPE: QC
