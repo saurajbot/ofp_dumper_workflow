@@ -43,4 +43,4 @@ jobs:
 ##########
 env:
   ROM_URL: https://rms01.realme.net/sw/RMX2151export_11_C.19_2022080619470000.zip
-  ROM_TYPE: https://rms01.realme.net/sw/RMX2151export_11_C.19_2022080619470000.zip
+  ROM_TYPE: MTK
