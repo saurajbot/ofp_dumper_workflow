@@ -42,5 +42,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/sw/RMX3395export_11_A.04_2022081713390141.zip
+  ROM_URL: https://rms01.realme.net/sw/RMX2156export_11_F.13_2023030817030149.zip
   ROM_TYPE: MTK
