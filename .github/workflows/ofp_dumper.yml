@@ -23,7 +23,7 @@ jobs:
         
        - name: Clone Ofp Dumper
          run: |
-              git clone https://github.com/noobyysauraj/ofp-dumper ofp-dumper
+              git clone https://github.com/ksauraj/ofp-dumper ofp-dumper
                         
        - name: Setup OFP Dumper environment
          working-directory: ofp-dumper
