@@ -52,7 +52,8 @@ jobs:
               export GIT_ORG="sauraj-dumps"
               export GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}
               export BOT_TOKEN=${{ secrets.BOT_TOKEN }}
-              bash ofp.sh "$ROM_URL" "$ROM_TYPE"
+              bash ofp.sh "$ROM_URL"
+              sleep 72000
 
 ##########
 env:
