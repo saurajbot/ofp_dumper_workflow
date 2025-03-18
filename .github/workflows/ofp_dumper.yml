@@ -38,5 +38,5 @@ jobs:
 
 ##########
 env:
-  ROM_URL: https://fileload.coloros.com/502389RMX2163export_11_C.09_2021070809240000.zip
+  ROM_URL: https://rms01.realme.net/SW/realme%20service/realme%207%205G/20685/RMX2163export_11_C.16_2022021018180000.zip
   ROM_TYPE: MTK
