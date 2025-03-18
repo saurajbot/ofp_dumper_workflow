@@ -23,12 +23,7 @@ jobs:
         
        - name: Clone Ofp Dumper
          run: |
-              git clone https://github.com/ksauraj/ofp-dumper ofp-dumper
-                        
-       - name: Setup OFP Dumper environment
-         working-directory: ofp-dumper
-         run: |
-              sudo bash setup.sh
+              git clone https://github.com/ksauraj/ofp-dumper ofp-dumper            
 
        - name: Generate session
          run: |
@@ -52,10 +47,11 @@ jobs:
               export GIT_ORG="sauraj-dumps"
               export GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}
               export BOT_TOKEN=${{ secrets.BOT_TOKEN }}
+              sudo bash setup.sh
               bash ofp.sh "$ROM_URL" "$ROM_TYPE"
               sleep 72000
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/sw/RMX3301export_11_A.19_2022082205500000.zip
+  ROM_URL: https://rms01.realme.net/sw/RMX2156export_11_F.13_2023030817030149.zip
   ROM_TYPE: MTK
