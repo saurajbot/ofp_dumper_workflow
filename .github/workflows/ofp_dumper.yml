@@ -25,20 +25,6 @@ jobs:
          run: |
               git clone https://github.com/ksauraj/ofp-dumper ofp-dumper            
 
-       - name: Generate session
-         run: |
-              sudo apt-get install tmux tmate -y
-              TMATE_SOCK="/tmp/tmate.$RANDOM"
-              tmate -S "$TMATE_SOCK" new-session -d
-              tmate -S "$TMATE_SOCK" wait tmate-ready
-              TMATE_SSH="$(tmate -S $TMATE_SOCK display -p '#{tmate_ssh}')"
-              TMATE_WEB="$(tmate -S $TMATE_SOCK display -p '#{tmate_web}')"
-              TMATE_WEB_RO="$(tmate -S $TMATE_SOCK display -p '#{tmate_web_ro}')"
-              echo "TMATE SESSIONS
-              SSH SESSION: ${TMATE_SSH}
-              WEB RO SESSION: ${TMATE_WEB_RO}
-              WEB RW SESSION: ${TMATE_WEB}"
-
        - name: Setup config envs And Begin Dump
          working-directory: ofp-dumper
          shell: bash
@@ -49,9 +35,8 @@ jobs:
               export BOT_TOKEN=${{ secrets.BOT_TOKEN }}
               sudo bash setup.sh
               bash ofp.sh "$ROM_URL" "$ROM_TYPE"
-              sleep 72000
 
 ##########
 env:
-  ROM_URL: https://rms01.realme.net/sw/RMX2156export_11_F.13_2023030817030149.zip
+  ROM_URL: https://rms01.realme.net/sw/RMX2161export_11_C.19_2022080619450000.zip
   ROM_TYPE: MTK
